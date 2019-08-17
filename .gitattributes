@@ -2,6 +2,7 @@
 secure/* filter=crypt diff=crypt
 
 *.sh text eol=lf
+logs text eol=lf
 jenkins-support text eol=lf
 plugins.txt text eol=lf
 Dockerfile text eol=lf
