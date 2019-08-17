@@ -25,3 +25,6 @@ Thumbs.db
 # Ignore other
 .vagrant
 .gradle
+
+# Ignore top level logs
+*.log
