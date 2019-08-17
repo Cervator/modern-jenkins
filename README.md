@@ -46,6 +46,14 @@ At this stage to see the new stuff in action from a fresh clone using Vagrant do
   * Jenkins will be available at http://localhost:8080
   * Gitea will be available at http://localhost:3000
   * If you want to *wipe* volumes for both then use `./wipe.sh` instead of the restart script
+OR
+* `vagrant up` to get your Vagrant box
+* `vagrant ssh` to get _into_ your Vagrant box
+* `cd /vagrant/images/` + `./build-all.sh` to build all three Docker images, which are described in the block above
+* `cd ../../deploy/master/` + `./restart.sh` to then actually use Docker Compose to stand up everything involved
+  * Jenkins will be available at http://localhost:8080
+  * Gitea will be available at http://localhost:3000
+  * If you want to *wipe* volumes for both then use `./wipe.sh` instead of the restart script
 
 A presentation PDF is included with the repo that covers "Hobo GitOps" - eventually a webinar recording of some sort should become available :-)
 

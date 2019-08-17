@@ -6,8 +6,11 @@ image_name=modernjenkins/jenkins-master:latest
 
 # Accept any args passed and add them to the command
 docker image build ${@} -t $image_name $(dirname -- "$0")
+exit_code=$?
 
 # If we add PUSH=true to the command, it will push to the hub
 if [ "$PUSH" = true ] ; then
   docker image push $image_name
 fi
+
+exit $exit_code
